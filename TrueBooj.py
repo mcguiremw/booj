@@ -11,7 +11,7 @@ def truebooj(number):
     mod_string_or_num = ''
 
     # Decided to loop through the dictionary for ease of future development, I am also
-    #   making sure that the dictionary is sorted by the keys and read in reverse
+    #   making sure that the dictionary is sorted by the keys and not read in reverse
     #   so that the print statements are arranged in relation to numerical order of
     #   its divisor in the dictionary.
     for mod, mod_string in sorted(modulos_to_strings.iteritems(), reverse=False):
