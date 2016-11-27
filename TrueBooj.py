@@ -29,6 +29,4 @@ def truebooj(number):
 
     # Checking the string to be returned to validate that it has been set with an even
     #   divisor's string statement.  If it has not than just return the number passed in
-    mod_string_or_num = mod_string_or_num.strip() if mod_string_or_num else str(number)
-    # Finally return the string of even divisor statements or the number passed in
-    return mod_string_or_num
+    return mod_string_or_num.strip() if mod_string_or_num else str(number)
