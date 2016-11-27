@@ -10,16 +10,16 @@
 # I used the resources above to confirm my thoughts on solving
 #   the problem and researching xrange()
 def eqindex(data):
-    #do code here
+    # do code here
     # Creating the list to return
-	equilibrium_indices = []
-	# Using xrange to save memory with very large lists
-	for i in xrange(len(data)):
-		# Logic to compare the sum of the two sublists, 'i' is the index that
-		#   will be recorded as the equilibrium since it is not included in the 
-		#   sum  of the left sublist.
-		if sum(data[:i]) == sum(data[i+1:]):
-			# When the two sublists are equal append 'i' to the list being
-			#   returned.  
-			equilibrium_indices.append(i)
-	return equilibrium_indices
+    equilibrium_indices = []
+    # Using xrange to save memory with very large lists
+    for i in xrange(len(data)):
+        # Logic to compare the sum of the two sublists, 'i' is the index that
+        #   will be recorded as the equilibrium since it is not included in the
+        #   sum  of the left sublist.
+        if sum(data[:i]) == sum(data[i + 1:]):
+            # When the two sublists are equal append 'i' to the list being
+            #   returned.
+            equilibrium_indices.append(i)
+    return equilibrium_indices
